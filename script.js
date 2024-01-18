@@ -109,7 +109,7 @@ function playTrack(){
     isPlaying = true
     trackArt.classList.add('rotate')
     wave.classList.add('loader')
-    playpauseBtn.innerHTML = '<i class ="fa fa-pause-circle fa-5x"></i>'
+    playpauseBtn.innerHTML = '<i class ="fa fa-circle-pause fa-5x"></i>'
 }
 function pauseTrack(){
     currTrack.pause()
@@ -139,7 +139,7 @@ function prevTrack(){
     loadTrack(track_index)
     playTrack()
 }
-function seekTo(){
+function seekTo(seek_slider){
     let seekto = currTrack.duration * (seek_slider.value / 100)
     currTrack.currentTime = seekto
 }
