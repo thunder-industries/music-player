@@ -137,7 +137,7 @@ function prevTrack(){
         track_index = music_list.length -1
     }
     loadTrack(track_index)
-    playTrack
+    playTrack()
 }
 function seekTo(){
     let seekto = currTrack.duration * (seek_slider.value / 100)
